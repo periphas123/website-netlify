@@ -10395,5 +10395,13 @@ body {
   bottom: 60px;
 }
 
+.gdpr-cookie-notice-nav-item-btn:hover {
+  text-decoration: underline!important;
+  color: #fff!important;
+}
+
+.gdpr-cookie-notice-nav-item:hover {
+  color: inherit;
+}
 
 /*# sourceMappingURL=maps/main.css.map */
