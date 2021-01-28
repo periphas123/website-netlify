@@ -55,22 +55,21 @@
 
                         <div class="collapse navbar-collapse" id="mobile-menu">
                             <div class="navbar-nav mr--10">
-
                                 <ul class="navbar-nav main-menu gr-mt-2  gr-mb-2">
                                     <li class="nav-item">
-                                        <a href="index.html" class="btn btn-nowidth goto rounded-pill gr-text-12 gr-btn-border">Strona Główna</a>
+                                        <a href="https://periphas.pl" class="btn btn-nowidth goto rounded-pill gr-text-12 gr-btn-border">Strona Główna</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="o-nas.html" class="btn btn-nowidth  goto rounded-pill gr-text-12 gr-btn-border">O nas</a>
+                                        <a href="https://periphas.pl/o-nas" class="btn btn-nowidth  goto rounded-pill gr-text-12 gr-btn-border">O nas</a>
 
                                     </li>
                                     <li class="nav-item">
-                                        <a href="uslugi.html" class="btn btn-nowidth  goto rounded-pill gr-text-12 gr-btn-border">Usługi</a>
+                                        <a href="https://periphas.pl/uslugi" class="btn btn-nowidth  goto rounded-pill gr-text-12 gr-btn-border">Usługi</a>
                                     <li class="nav-item">
-                                        <a href="realizacje.html" class="btn btn-nowidth  goto rounded-pill gr-text-12 gr-btn-border">Realizacje</a>
+                                        <a href="https://periphas.pl/realizacje class=" btn btn-nowidth goto rounded-pill gr-text-12 gr-btn-border">Realizacje</a>
                                     <li class="nav-item">
 
-                                        <a style="min-width: 130px;padding:25px 50px;margin-left: 20px;height: 0px;" href="kontakt.html" class="btn btn-outline goto rounded-pill gr-text-12 gr-btn-border">Kontakt</a>
+                                        <a style="min-width: 130px;padding:25px 50px;margin-left: 20px;height: 0px;" href="https://periphas.pl/kontakt" class="btn btn-outline goto rounded-pill gr-text-12 gr-btn-border">Kontakt</a>
 
                                     </li>
                                 </ul>
@@ -138,10 +137,28 @@
 
                     </div>
                     <div class="contact-block">
-                        <div class="container gr-pt-lg-20 gr-pt-10 gr-pb-12">
+                        <div style="margin-bottom: 22px;" class="container gr-pt-lg-20 gr-pt-10 gr-pb-2">
                             <div class="row">
-                                <iframe style="filter:grayscale(1)" width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=852&amp;height=400&amp;hl=en&amp;q=%20Pozna%C5%84+(Pozna%C5%84)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-                                <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=bc4cbf7388b02293c5661f3b8b85bb5f88cc5922'></script>
+                                <div class="mapouter">
+                                    <div class="gmap_canvas"><iframe style="filter: grayscale(1);" width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Pozna%C5%84&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                        <style>
+                                            .mapouter {
+                                                position: relative;
+                                                text-align: right;
+                                                height: 500px;
+                                                width: 1080px;
+                                            }
+                                        </style>
+                                        <style>
+                                            .gmap_canvas {
+                                                overflow: hidden;
+                                                background: none !important;
+                                                height: 500px;
+                                                width: 1080px;
+                                            }
+                                        </style>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <button style="width:100%" type="submit" name="submit" id="submit" class="btn btn-primary  rounded-pill pageload-link btn-hover-translate btn-hover-shadow-down gr-mt-9">Nawiguj </button>
