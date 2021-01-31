@@ -45,21 +45,7 @@
     <script type="text/javascript" src="gdpr-cookie-notice/dist/script.js"></script>
     <link rel="stylesheet" type="text/css" href="gdpr-cookie-notice/dist/style.css" />
 
-    <script>
-        ! function(g, s, q, r, d) {
-            r = g[r] = g[r] || function() {
-                (r.q = r.q || []).push(
-                    arguments)
-            };
-            d = s.createElement(q);
-            q = s.getElementsByTagName(q)[0];
-            d.src = '//d1l6p2sc9645hc.cloudfront.net/tracker.js';
-            q.parentNode.
-            insertBefore(d, q)
-        }(window, document, 'script', '_gs');
-
-        _gs('GSN-428181-C');
-    </script>
+    <script src="js/script-chat.js"></script>
 </head>
 
 <body data-theme-mode-panel-active>
@@ -69,7 +55,7 @@
     <main>
         <div class="site-wrapper overflow-hidden position-relative">
             <!-- Header Area -->
-            <header style="border-bottom: 1px solid rgba(235, 235, 235, 0.747);box-shadow: 0 32px 54px rgba(3, 3, 3, 0.041);background: #ffffffcc;" class="site-header site-header-menu--right site-header--sticky">
+            <header class="site-header header-background header-shadow header-border-bottom site-header-menu--right site-header--sticky">
                 <div class="container-fluid pr-lg--30 pl-lg--30">
                     <nav class="navbar site-navbar offcanvas-active navbar-expand-lg navbar-light">
 
@@ -92,7 +78,7 @@
                                         <a href="https://periphas.pl/blog" class=" btn btn-nowidth goto rounded-pill gr-text-12 gr-btn-border">Blog</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a style="min-width: 130px;padding:25px 50px;margin-left: 20px;height: 0px;" href="https://periphas.pl/kontakt" class="btn btn-outline goto rounded-pill gr-text-12 gr-btn-border">Kontakt</a>
+                                        <a href="https://periphas.pl/kontakt" class="cta-nav btn btn-outline goto rounded-pill gr-text-12 gr-btn-border">Kontakt</a>
                                     </li>
 
                                 </ul>
@@ -112,25 +98,25 @@
                     </nav>
                 </div>
             </header>
-            <div class="hero-section ">
+            <div class="hero-section gr-pt-10">
                 <div class="hero-pattern absolute-top gr-abs-top w-100 z-index-n1">
                     <img src="image/webp/hero-pattern.webp" alt="">
                 </div>
                 <div class="container">
-                    <div style="padding-top: 19rem!important;" class="row justify-content-start gr-pt-lg-18 gr-pb-lg-15 gr-pt-12 gr-pb-7">
+                    <div class="row justify-content-start gr-pt-18 gr-pb-lg-15 gr-pb-7">
                         <div class="col-lg-8">
                             <div class="hero-content text-left">
                                 <h2 class="bullet-text text bullet-color-green gr-text-12 font-weight-bold text-uppercase gr-pb-5 d-inline-block">
                                     Aktywnie przyjmujemy zlecenia</h2>
-                                <h1 style="font-family:'Poppins';font-weight: 500;letter-spacing: 0.3px;text-transform: uppercase;" class="gr-text-2 font-weight-bold ">Cyfrowy, <br> lepszy marketing</h1>
+                                <h1 class="gr-text-2 text-uppercase font-weight-bold poppins">Cyfrowy, <br> lepszy marketing</h1>
                                 <span class="gr-text-8 gr-pt-5 gr-pb-7 d-inline-block">Szukasz grupy specjalistów do twojego zlecenia?<br> Problemy ze stroną? Sklepem? Kiepskie pozycjonowanie?</span>
                                 <div class="gr-pt-9">
                                     <a href="https://periphas.plkontakt" class="btn btn-secondary with-icon rounded-pill pageload-link btn-hover-translate btn-hover-shadow-down goto btn-shadow contact-modal-trigger"><i class="icon icon-chat-round-2 gr-text-8 gr-pr-5 font-weight-bolder"></i> Porozmawiajmy</a>
                                 </div>
                             </div>
                         </div>
-                        <div style="display:flex;align-items:center;" class="col-lg-4">
-                            <img style="border:3px solid rgba(241, 241, 241, 0.432);border-radius: 100px;box-shadow: 0 32px 54px rgba(3, 3, 3, 0.041);" alt="" src="image/jpg/portfolio-about-2.jpg" class=" gr-border-radius-10">
+                        <div class="col-lg-4">
+                            <img alt="" src="image/jpg/portfolio-about-2.jpg" class="border-radius-5 d-flex gr-box-shadow">
                         </div>
                     </div>
                 </div>
@@ -259,21 +245,24 @@
 
 
         <div class="gr-bg-folio-pattern">
-            <div style="padding-top: 150px;" class="gr-pt-lg-17 gr-pb-lg-17 gr-pt-9 gr-pb-9 ">
+            <div class="gr-pt-lg-10 gr-pb-lg-17 gr-pt-9 gr-pb-9">
                 <div class="container">
-                    <div class="row ">
-                        <div style="min-width: 100%!important; padding: 80px;
-              background-color: #56b381;
-    border-color: #56b381;box-shadow: 0 22px 34px rgba(22, 28, 45, 0.18);
-    border: transparent;border-radius: 30px;" class="col-xl-5 col-lg-5 text-left">
-                            <div class="">
-                                <div style="display:Flex;" class="justify-content-center"><span class="gr-pt-5 gr-pr-7 gr-pb-5 gr-pl-7 gr-mb-8 gr-bg-wheat gr-color-blackish-blue with-icon rounded-pill"><i class="icon icon-chat-round-2 gr-text-5 font-weight-bolder"></i></span></div>
-                                <h2 style="font-family:'Poppins';font-weight: 600;line-height: 1.4;letter-spacing: 1.3px;" class="gr-text-4 text-center text-uppercase gr-color-white "><a style="color: #fff;" href="https://periphas.pl/kontakt">Przyjmujemy nowe projekty,<br> czekamy na twoją wiadomość</a></h2>
+                    <div class="row">
+                        <div class="col-lg-20 min-width-100 gr-color-white border-radius-5 cta-background p-80">
+                            <div>
+                                <div class="d-flex justify-content-center">
+                                    <span class="gr-pt-5 gr-pr-7 gr-pb-5 gr-pl-7 gr-mb-8 gr-bg-wheat gr-color-blackish-blue with-icon rounded-pill">
+                                        <i class="icon icon-chat-round-2 gr-text-5 font-weight-bolder"></i>
+                                    </span>
+                                </div>
+                                <h2 class="poppins gr-text-4 text-center font-weight-medium text-uppercase gr-color-white letter-spacing-1_63">
+                                    <a class="text-white" href="https://periphas.pl/kontakt">Przyjmujemy nowe projekty,<br> czekamy na twoją wiadomość</a>
+                                </h2>
 
                                 <ul class="links-inline d-flex flex-wrap justify-content-center  gr-pt-md-4 gr-pt-10 pl-0">
 
                                     <li class="text-uppercase border-right-sm font-weight-bold gr-text-12 letter-spacing-1_63">
-                                        <a style="padding-left: 0!important;" href="mailto:kontakt@periphas.pl" class="gr-px-7 nohover-footer  gr-color-white d-inline-block btn-hover-translate ">
+                                        <a href="mailto:kontakt@periphas.pl" class="gr-px-7 nohover-footer  gr-color-white d-inline-block btn-hover-translate ">
                                             <span>kontakt@periphas.pl</span>
                                         </a>
                                     </li>
@@ -294,27 +283,21 @@
 
 
 
-            <footer style="border-top: 1px solid rgba(235, 235, 235, 0.747);" class=" gr-pt-7 gr-pb-4">
-                <div class="gr-pt-lg-17 gr-pb-lg-17 gr-pt-9 gr-pb-9 ">
+            <footer class="border-top  gr-pb-4">
+                <div class="gr-pt-lg-12 gr-pb-lg-12  gr-pb-9 ">
                     <div class="container">
                         <div class="row">
                             <div class="column col-lg-3">
-                                <span style="margin: 20px 0px;" class="gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pb-1 d-block">Informacje</span>
+                                <span class="gr-mb-4 gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pt-8 gr-pb-1 d-block">Informacje</span>
                                 <p class="gr-text-10">
-                                    <a href="https://periphas.pl/o-nas" class="gr-text-color-opacity">Kim jesteśmy</a>
+                                    <a href="https://periphas.pl/o-nas" class="gr-text-color-opacity">O nas</a>
                                 </p>
                                 <p class="gr-text-10">
-                                    <a href="#" class="gr-text-color-opacity">Co robimy</a>
-                                </p>
-                                <p class="gr-text-10">
-                                    <a href="#" class="gr-text-color-opacity">Przebieg Współpracy</a>
-                                </p>
-                                <p class="gr-text-10">
-                                    <a href="#" class="gr-text-color-opacity">Oferty Pracy</a>
+                                    <a href="https://periphas.pl/uslugi" class="gr-text-color-opacity">Nasze usługi</a>
                                 </p>
                             </div>
                             <div class="column col-lg-3">
-                                <span style="margin: 20px 0px;" class="gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pb-1 d-block">Usługi</span>
+                                <span class="gr-mb-4 gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pt-8 gr-pb-1 d-block">Usługi</span>
                                 <p class="gr-text-10">
                                     <a href="https://periphas.pl/uslugi" class="gr-text-color-opacity">Strony Internetowe</a>
                                 </p>
@@ -333,7 +316,7 @@
 
                             </div>
                             <div class="column col-lg-3">
-                                <span style="margin: 20px 0px;" class="gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pb-1 d-block">Realizacje</span>
+                                <span class="gr-mb-4 gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pt-8 gr-pb-1 d-block">Realizacje</span>
                                 <p class="gr-text-10">
                                     <a href="#" class="gr-text-color-opacity">Hotel Borowina</a>
                                 </p>
@@ -342,36 +325,42 @@
                                 </p>
                             </div>
                             <div class="column col-lg-3">
-                                <span style="margin: 20px 0px;" class="gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pb-1 d-block">Obsługa Klienta</span>
+                                <span class="gr-mb-4 gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pt-8 gr-pb-1 d-block">Obsługa Klienta</span>
                                 <p class="gr-text-10">
-                                    <a href="#" class="gr-text-color-opacity">Zwroty</a>
+                                    <a href="#" class="gr-text-color-opacity">Reklamacje</a>
                                 </p>
                                 <p class="gr-text-10">
                                     <a href="#" class="gr-text-color-opacity">Program partnerski</a>
                                 </p>
-                                <p class="gr-text-10">
-                                    <a href="https://periphas.pl/kontakt" class="gr-text-color-opacity">Kontakt z nami</a>
-                                </p>
+
                             </div>
                         </div>
                     </div>
 
                 </div>
-                <div style="display: flex;justify-content: space-between;border-top: 1px solid rgba(235, 235, 235, 0.747);padding-top: 40px;" class="container">
+                <div class="border-top gr-pt-5">
+                    <div class="container d-flex space-between gr-mt-4">
+                        <div class="row">
+                            <p class="gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase d-block">© 2021 Periphas, Wszelkie prawa ZASTRZEżONE</p>
+                        </div>
+                        <div class="row d-flex">
+                            <p class="gr-pl-7 gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase d-block">
+                                <a href="https://periphas.pl/warunki-korzystania" class="gr-text-color-opacity">Warunki</a>
+                            </p>
+                            <p class="gr-pl-7 gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pb-1 d-block">
+                                <a href="https://periphas.pl/polityka-prywatnosci" class="gr-text-color-opacity">Prywatność</a>
+                            </p>
+                            <p class="gr-pl-7 gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pb-1 d-block">
+                                <a href="https://periphas.pl/klauzula-rodo" class="gr-text-color-opacity">Rodo</a>
+                            </p>
 
-
-                    <div style="display: flex;justify-content: flex-start;"">
-                        <p class=" gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pb-1 d-block"></a>© 2021 Periphas, Wszelkie prawa ZASTRZEżONE</p>
-                    </div>
-                    <div style="display: flex;justify-content: flex-end;">
-                        <p style="margin-left: 20px;" class="gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pb-1 d-block"><a href="https://periphas.pl/warunki-korzystania" class="gr-text-color-opacity">Warunki</a></p>
-                        <p style="margin-left: 20px;" class="gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pb-1 d-block"><a href="https://periphas.pl/polityka-prywatnosci" class="gr-text-color-opacity">Prywatność</a></p>
-                        <p style="margin-left: 20px;" class="gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pb-1 d-block"><a href="https://periphas.pl/klauzula-rodo" class="gr-text-color-opacity">rodo</a></p>
-
-                        <p style="margin-left: 20px;" class="gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pb-1 d-block"><a href="https://periphas.pl/informacje-o-firmie" class="gr-text-color-opacity">Informacje o firmie</a></p>
-                        <p style="margin-left: 20px;" class="gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pb-1 d-block"><a href="https://periphas.pl/sitemap.xml" class="gr-text-color-opacity">Mapa Witryny</a></p>
-
-
+                            <p class="gr-pl-7 gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pb-1 d-block">
+                                <a href="https://periphas.pl/informacje-o-firmie" class="gr-text-color-opacity">Nota prawna</a>
+                            </p>
+                            <p class="gr-pl-7 gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pb-1 d-block">
+                                <a href="https://periphas.pl/sitemap.xml" class="gr-text-color-opacity">Mapa Witryny</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </footer>
