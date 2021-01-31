@@ -11,3 +11,4 @@
 }(window, document, 'script', '_gs');
 
 _gs('GSN-428181-C');
+_gs('set', 'anonymizeIP', true);
