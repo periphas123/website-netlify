@@ -11971,7 +11971,7 @@ body {
 }
 
 .border-radius-5 {
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .size-12px {
@@ -12018,6 +12018,37 @@ body {
 
 .let-spacing {
     letter-spacing: 3px;
+}
+
+.blog-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.blog-title {
+    margin-bottom: 15px;
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+.blog-description {
+    padding-bottom: 13px;
+}
+
+.blog-span {
+    font-size: 14px;
+    padding-right: 10px;
+    font-weight: 500;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+.blog-span-1 {
+    font-size: 14px;
+    padding-right: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+
 }
 
 /*# sourceMappingURL=maps/main.css.map */
