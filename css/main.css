@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
 
 /*********** CSS TABLE OF CONTENTS *******************
 
@@ -20,6 +21,8 @@
 |
 |--- 3.Theme Indivudual Styles
 ******************************************************/
+
+
 body[data-theme='dark'],
 .dark-bg,
 .dark-bg-text {
@@ -9035,7 +9038,7 @@ p {
 
 /* Utility -> Color classes */
 .gr-color-blue {
-    color: #495fef;
+    color: #495fef !important;
 }
 
 .gr-bg-blue {
@@ -11842,7 +11845,7 @@ ul {
 
 .portfolio-card-hover .card-image img {
     transition: .4s;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .portfolio-card-hover:hover .card-image {
@@ -11850,7 +11853,7 @@ ul {
 }
 
 .portfolio-card-hover:hover img {
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0 32px 74px rgba(68, 77, 136, 0.2);
 }
 
@@ -11955,7 +11958,7 @@ body {
 }
 
 .p-10 {
-    padding: 10px 20px;
+    padding: 10px 40px;
 }
 
 .cta-background {
@@ -11987,13 +11990,33 @@ body {
     background-color: rgba(73, 95, 239, 0.1);
     width: 100%;
     padding: 50px;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
-.Zeyada {
-    font-family: 'Zeyada';
-    font-size: 50px;
+
+.zeyada {
+    font-family: 'zeyada';
+    font-size: 60px;
+}
+
+.p-30 {
+    padding: 15px;
+}
+
+.max-width-600 {
+    max-width: 600px !important;
+}
+
+.max-width-700 {
+    max-width: 700px !important;
+}
+
+.border-radius-100 {
+    border-radius: 100px;
+}
+
+.let-spacing {
+    letter-spacing: 3px;
 }
 
 /*# sourceMappingURL=maps/main.css.map */
-;
