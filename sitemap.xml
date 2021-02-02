@@ -9,37 +9,62 @@
 
 <url>
   <loc>https://periphas.pl/</loc>
-  <lastmod>2021-01-28T20:17:52+00:00</lastmod>
+  <lastmod>2021-02-02T02:42:07+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://periphas.pl/o-nas</loc>
-  <lastmod>2021-01-28T20:17:52+00:00</lastmod>
+  <lastmod>2021-02-02T02:42:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://periphas.pl/uslugi</loc>
-  <lastmod>2021-01-28T20:17:52+00:00</lastmod>
+  <lastmod>2021-02-02T02:42:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://periphas.pl/realizacje</loc>
-  <lastmod>2021-01-28T20:17:52+00:00</lastmod>
+  <lastmod>2021-02-02T02:42:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://periphas.pl/blog</loc>
+  <lastmod>2021-02-02T02:42:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://periphas.pl/kontakt</loc>
-  <lastmod>2021-01-28T20:17:52+00:00</lastmod>
+  <lastmod>2021-02-02T02:42:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://periphas.pl/folwark-ruchenka</loc>
+  <lastmod>2021-02-02T02:42:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://periphas.pl/hotel-borowina</loc>
+  <lastmod>2021-02-02T02:42:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://periphas.pl/warunki-korzystania</loc>
-  <lastmod>2021-01-28T20:17:52+00:00</lastmod>
+  <lastmod>2021-02-02T02:42:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://periphas.pl/polityka-prywatnosci</loc>
-  <lastmod>2021-01-28T20:17:52+00:00</lastmod>
+  <lastmod>2021-02-02T02:42:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://periphas.pl/klauzula-rodo</loc>
+  <lastmod>2021-02-02T02:42:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://periphas.pl/informacje-o-firmie</loc>
+  <lastmod>2021-02-02T02:42:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
