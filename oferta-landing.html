@@ -34,6 +34,7 @@
 
     <!-- Plugin'stylesheets  -->
     <link rel="stylesheet" href="plugins/aos/aos.min.css">
+    <link rel="stylesheet" href="plugins/animatedModal/animate.css">
     <!-- Vendor stylesheets  -->
     <!-- <link rel="stylesheet" href="css/settings.css"> -->
     <link rel="stylesheet" href="css/main.css">
@@ -52,7 +53,7 @@
             };
             d = s.createElement(q);
             q = s.getElementsByTagName(q)[0];
-            d.src = 'https://d1l6p2sc9645hc.cloudfront.net/tracker.js';
+            d.src = '//d1l6p2sc9645hc.cloudfront.net/tracker.js';
             q.parentNode.
             insertBefore(d, q)
         }(window, document, 'script', '_gs');
@@ -63,7 +64,7 @@
 
 </head>
 
-<body>
+<body data-theme-mode-panel-active>
     <div id="preloader" class="preloader">
         <span class="counter">0</span>
     </div>
@@ -257,38 +258,45 @@
                 </div>
             </div>
         </div>
-        <div>
-            <div class="gr-pt-13 gr-pb-13">
+
+        <div class="container">
+            <div class="social-links gr-mt-17 col-lg-20 d-flex space-between">
+                <a href="" class="gr-color-gray gr-text-12 font-weight-bold gr-mr-8 letter-spacings-1 link-hover-rotate link-hover-dark text-uppercase">Facebook</a>
+                <a href="" class="gr-color-gray gr-text-12 font-weight-bold gr-mr-8 letter-spacings-1 link-hover-rotate link-hover-dark text-uppercase">Instagram</a>
+                <a href="" class="gr-color-gray gr-text-12 font-weight-bold gr-mr-8 letter-spacings-1 link-hover-rotate link-hover-dark text-uppercase">Twitter</a>
+                <a href="" class="gr-color-gray gr-text-12 font-weight-bold gr-mr-8 letter-spacings-1 link-hover-rotate link-hover-dark text-uppercase">Behance</a>
+            </div>
+        </div>
+        <div class="gr-bg-folio-pattern">
+            <div class="gr-pt-lg-10 gr-pb-lg-17 gr-pt-9 gr-pb-9">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-20 min-width-100 gr-color-white border-radius-5 cta-background p-80">
                             <div>
-                               
-                                <h2 style="margin-top: 25px;"
-                                    class="poppins gr-text-4 text-left font-weight-medium text-uppercase gr-color-white letter-spacing-1_63">
-                                    <a class="text-white" href="https://periphas.pl/kontakt">Przyjmujemy nowe
-                                        projekty,<br> czekamy na twoją wiadomość</a>
+                                <div class="d-flex justify-content-center">
+                                    <span class="gr-pt-5 gr-pr-7 gr-pb-5 gr-pl-7 gr-mb-8 gr-bg-wheat gr-color-blackish-blue with-icon rounded-pill">
+                                        <i class="icon icon-chat-round-2 gr-text-5 font-weight-bolder"></i>
+                                    </span>
+                                </div>
+                                <h2 class="poppins gr-text-4 text-center font-weight-medium text-uppercase gr-color-white letter-spacing-1_63">
+                                    <a class="text-white" href="https://periphas.pl/kontakt">Przyjmujemy nowe projekty,<br> czekamy na twoją wiadomość</a>
                                 </h2>
 
-                                <ul class="links-inline d-flex flex-wrap  gr-pt-md-4 gr-pt-10 pl-0">
+                                <ul class="links-inline d-flex flex-wrap justify-content-center  gr-pt-md-4 gr-pt-10 pl-0">
 
-                                    <li
-                                        class="text-uppercase border-right-sm font-weight-bold gr-text-12 letter-spacing-1_63">
-                                        <a style="padding-left: 0!important;" href="mailto:kontakt@periphas.pl"
-                                            class="gr-px-7 nohover-footer  gr-color-white d-inline-block btn-hover-translate ">
-                                            <span>USŁUGI</span>
+                                    <li class="text-uppercase border-right-sm font-weight-bold gr-text-12 letter-spacing-1_63">
+                                        <a href="mailto:kontakt@periphas.pl" class="gr-px-7 nohover-footer  gr-color-white d-inline-block btn-hover-translate ">
+                                            <span>kontakt@periphas.pl</span>
                                         </a>
                                     </li>
                                     <li class="text-uppercase font-weight-bold gr-text-12 letter-spacing-1_63">
-                                        <a href=""
-                                            class="gr-px-7 d-inline-block gr-color-white nohover-footer btn-hover-translate">
-                                            <span>SKONTAKTUJ SIĘ Z NAMI</span>
+                                        <a href="" class="gr-px-7 d-inline-block gr-color-white nohover-footer btn-hover-translate">
+                                            <span>linkedin.com/periphas</span>
                                         </a>
                                     </li>
                                 </ul>
                             </div>
-                            <button style="margin-top:25px;border-color: none!important;box-shadow: 0 32px 54px rgba(3, 3, 3, 0.12);" type="submit" name="submit" id="submit" class="gr-bg-wheat min-width-100 btn with-icon rounded-pill pageload-link btn-hover-translate btn-hover-shadow-down">WYCEŃ PROJEKT<i style="margin-left: 20px;" class="icon icon-tail-right gr-text-8 font-weight-bolder"></i>
-                            </button>
+
 
                         </div>
 
@@ -384,6 +392,7 @@
     </main>
     <!-- Vendor Scripts -->
     <script src="js/vendor.min.js"></script>
+    <script src="plugins/animatedModal/animatedmodal.min.js"></script>
     <script src="plugins/isotope/isotope.pkgd.min.js"></script>
     <script src="plugins/isotope/packery.pkgd.min.js"></script>
     <script src="plugins/isotope/image.loaded.js"></script>

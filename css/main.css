@@ -11846,6 +11846,7 @@ ul {
 .portfolio-card-hover .card-image img {
     transition: .4s;
     border-radius: 10px;
+    box-shadow: 0 32px 54px rgba(3, 3, 3, 0.12);
 }
 
 .portfolio-card-hover:hover .card-image {
@@ -12033,22 +12034,38 @@ body {
 
 .blog-description {
     padding-bottom: 13px;
+    font-size: 17px;
+    margin-top: 10px;
+    line-height: 1.7;
 }
 
 .blog-span {
-    font-size: 14px;
-    padding-right: 10px;
-    font-weight: 500;
-    padding-left: 10px;
+    font-size: 11px;
+    font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #495fef;
+    background-color: rgba(73, 95, 239, 0.1);    padding: 10px 20px;
+    border-radius: 10px;
+    margin-right: 15px;
 }
 
-.blog-span-1 {
-    font-size: 14px;
-    padding-right: 10px;
-    font-weight: 500;
+.blog-span-1 { 
+    font-size: 11px;
+    font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #495fef;
+  background-color: rgba(73, 95, 239, 0.1);;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-right: 15px;
 
+}
+
+.btn:focus, .btn.focus {
+    outline: 0;
+    box-shadow: none;
 }
 
 /*# sourceMappingURL=maps/main.css.map */
