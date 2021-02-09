@@ -16,9 +16,10 @@
     transform: translateY(100%);
     z-index: 1000;
     font-family: "Inter";
-    padding: 40px 80px;
+    padding: 27px 80px;
     box-shadow: 0 22px 34px rgba(22, 28, 45, 0.11);
-    border-radius: 10px;
+    border-radius: 0px;
+    border-top: 1px solid rgba(160, 160, 160, 0.151);
 }
 
 @media (max-width: 768px) {
@@ -74,7 +75,7 @@
     letter-spacing: 1.63px;
     text-transform: uppercase;
     font-weight: 700;
-    border: 2px solid #56b381;
+    border: 2px solid #81818149;
     margin: 0px 5px;
     border-radius: 10px;
     display: block;
@@ -92,8 +93,8 @@
 }
 
 .gdpr-cookie-notice-nav-item-btn {
-    background: #56b381;
-    color: #b6e4cb;
+    background: #a8a8a879;
+    color: #fff;
     border-radius: 10px
 }
 

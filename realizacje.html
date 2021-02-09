@@ -42,7 +42,15 @@
     <!-- <link rel="stylesheet" href="css/custom.css"> -->
     <script type="text/javascript" src="gdpr-cookie-notice/dist/script.js"></script>
     <link rel="stylesheet" type="text/css" href="gdpr-cookie-notice/dist/style.css" />
-
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
     <script>
         ! function(g, s, q, r, d) {
             r = g[r] = g[r] || function() {
@@ -62,9 +70,7 @@
 </head>
 
 <body>
-    <div id="preloader" class="preloader">
-        <span class="counter">0</span>
-    </div>
+  
     <main>
         <div class="site-wrapper overflow-hidden position-relative">
             <!-- Header Area -->
@@ -73,32 +79,36 @@
                     <nav class="navbar site-navbar offcanvas-active navbar-expand-lg navbar-light">
 
                         <div class="collapse navbar-collapse" id="mobile-menu">
+                            <div class="container">
                             <div class="navbar-nav mr--10">
-                                <ul class="navbar-nav main-menu gr-mr-5 gr-mt-2  gr-mb-2">
+                                <ul class="navbar-nav main-menu gr-mt-2  gr-mb-2">
+                                    
                                     <li class="nav-item">
-                                        <a href="https://periphas.pl" class="btn btn-nowidth goto rounded-pill gr-text-12 gr-btn-border">Strona Główna</a>
+                                        <a style="min-width: 50px!important;padding: 25px 20px;" href="javascript:void(0)" class="cta-nav btn btn-outline goto rounded-pill gr-text-12 gr-btn-border">
+                                            <i class="icon icon-bookmark-2 gr-text-8 font-weight-bolder"></i>
+                                        </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="https://periphas.pl/o-nas" class="btn btn-nowidth  goto rounded-pill gr-text-12 gr-btn-border">O nas</a>
+                                        <a style="min-width: 50px!important;padding: 25px 20px;" href="javascript:void(0)" class="cta-nav btn btn-outline goto rounded-pill gr-text-12 gr-btn-border">
+                                            <i class="icon icon-bag-09 gr-text-8 font-weight-bolder"></i>
+                                            </a>
                                     </li>
+                                  
                                     <li class="nav-item">
-                                        <a href="https://periphas.pl/uslugi" class="btn btn-nowidth  goto rounded-pill gr-text-12 gr-btn-border">Usługi</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="https://periphas.pl/realizacje" class=" btn btn-nowidth goto rounded-pill gr-text-12 gr-btn-border">Realizacje</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="https://periphas.pl/blog" class=" btn btn-nowidth goto rounded-pill gr-text-12 gr-btn-border">Blog</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="https://periphas.pl/kontakt" class="cta-nav btn btn-outline goto rounded-pill gr-text-12 gr-btn-border">Kontakt</a>
+                                        <a  onclick="openNav()" style="min-width: 50px!important;padding: 25px 20px;" href="javascript:void(0)" class="cta-nav btn btn-outline goto rounded-pill gr-text-12 gr-btn-border">
+                                            <i class="icon icon-menu-34 gr-text-8 font-weight-bolder"></i>
+                                            </a>
                                     </li>
 
+                                    <li class="nav-item">
+                                        <a  href="javascript:void(0)" class="cta-nav btn btn-secondary goto rounded-pill gr-text-12 gr-btn-border">Wycena projektu</a>
+                                    </li>
                                 </ul>
                             </div>
                             <button class="d-block d-lg-none offcanvas-btn-close" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="true" aria-label="Toggle navigation">
                                 <i class="gr-cross-icon"></i>
                             </button>
+                        </div>
                         </div>
                         <button class="navbar-toggler btn-close-off-canvas hamburger-icon border-0" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
                             <!-- <i class="icon icon-simple-remove icon-close"></i> -->
@@ -110,11 +120,20 @@
                         </button>
                     </nav>
                 </div>
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="https://periphas.pl/">Strona Główna</a>
+                    <a href="https://periphas.pl/o-nas">O nas</a>
+                    <a href="https://periphas.pl/uslugi">Usługi</a>
+                    <a href="https://periphas.pl/realizacje">Realizacje</a>
+                    <a href="https://periphas.pl/blog">Blog</a>
+                    <a href="https://periphas.pl/kontakt">Kontakt</a>
+                  </div>
             </header>
             <div class="hero-section ">
                 
                 <div class="container">
-                    <div class="row  gr-pt-lg-18 gr-pb-lg-15 gr-pt-12 gr-pb-7">
+                    <div class="row  gr-pt-lg-18 gr-pb-lg-10 gr-pt-5 gr-pb-7">
                         <div class="col-lg-10">
                             <div class="hero-content text-left">
                                 <div class="d-flex gr-mb-7">
@@ -122,7 +141,7 @@
                                     <span class="let-spacing gr-mr-5 gr-mb-7 text-uppercase size-12px gr-color-blue gr-border-radius-10 font-weight-bold p-10 gr-bg-blue-opacity-1">></span>
                                     <span class="let-spacing gr-mr-5 gr-mb-7 text-uppercase size-12px gr-color-blue gr-border-radius-10 font-weight-bold p-10 gr-bg-blue-opacity-1"><a href="https://periphas.pl/realizacje">realizacje</a></span>
                                 </div>
-                                <h2 class="poppins text-lowercase gr-text-3 font-weight-medium gr-pb-5">nasze realizacje</h2> <span class="gr-text-7 gr-pt-5 gr-pb-7 d-inline-block max-width-700">Dotychczasowe prace wykonane przez nas, dla naszych klientów.<br> Na pewno znajdziesz coś ciekawego dla siebie!</span>
+                                <h2 class="poppins text-capitalize gr-text-3 font-weight-medium gr-pb-5">nasze realizacje</h2> <span class="gr-text-7 gr-pt-5 gr-pb-7 d-inline-block max-width-700">Dotychczasowe prace wykonane przez nas, dla naszych klientów.<br> Na pewno znajdziesz coś ciekawego dla siebie!</span>
 
                             </div>
                         </div>
@@ -133,156 +152,108 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-12">
-                            <ul class="nav isotope-nav text-left gr-pb-9" id="isotope-filters">
-                                <li class="nav-item gr-px-4">
-                                    <a class="nav-link active gr-text-color-opacity gr-text-12 font-weight-bold text-uppercase" href="javascript:" data-filter="*">Wszystko</a>
-                                </li>
-                                <li class="nav-item gr-px-4">
-                                    <a class="nav-link gr-text-color-opacity gr-text-12 font-weight-bold text-uppercase" href="javascript:" data-filter=".branding">STRONY INTERNETOWE</a>
-                                </li>
-                                <li class="nav-item gr-px-4">
-                                    <a class="nav-link gr-text-color-opacity gr-text-12 font-weight-bold text-uppercase" href="javascript:" data-filter=".design">SKLEPY INTERNETOWE</a>
-                                </li>
-                                <li class="nav-item gr-px-4">
-                                    <a class="nav-link gr-text-color-opacity gr-text-12 font-weight-bold text-uppercase" href="javascript:" data-filter=".photography">OPTYMALIZACJA</a>
-                                </li>
-                                <li class="nav-item gr-px-4">
-                                    <a class="nav-link gr-text-color-opacity gr-text-12 font-weight-bold text-uppercase" href="javascript:" data-filter=".photography">POZYCJONOWANIE</a>
-                                </li>
-                            </ul>
+                            
                             <div class="iso-grid-wrap row">
                                 <div class="col-sm-4 gr-pb-7 gr-pb-lg-13 isotope-item all branding">
                                     <div class="portfolio-card portfolio-card-hover">
                                         <a href="" class="card-image d-block">
-                                            <img src="image/jpg/portfolio-image3.jpg" alt="" class="w-100">
+                                            <img src="image/jpg/portfolio-image-1.jpg" alt="" class="w-100">
                                         </a>
                                         <div class="text-center gr-pt-8">
                                             <span class="gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pb-1 d-block">STRONY INTERNETOWE</span>
-                                            <h3 class="gr-text-5 font-weight-bold"><a href="" class="gr-heading-color">--</a></h3>
+                                            <h3 class="gr-text-6 font-weight-bold"><a href="" class="gr-heading-color">--</a></h3>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-4 gr-pb-7 gr-pb-lg-13 isotope-item all branding">
                                     <div class="portfolio-card portfolio-card-hover">
                                         <a href="" class="card-image d-block">
-                                            <img src="image/jpg/portfolio-image3.jpg" alt="" class="w-100">
+                                            <img src="image/jpg/portfolio-image-2.jpg" alt="" class="w-100">
                                         </a>
                                         <div class="text-center gr-pt-8">
                                             <span class="gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pb-1 d-block">STRONY INTERNETOWE</span>
-                                            <h3 class="gr-text-5 font-weight-bold"><a href="" class="gr-heading-color">--</a></h3>
+                                            <h3 class="gr-text-6 font-weight-bold"><a href="" class="gr-heading-color">--</a></h3>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-4 gr-pb-7 gr-pb-lg-13 isotope-item all branding">
                                     <div class="portfolio-card portfolio-card-hover">
                                         <a href="" class="card-image d-block">
-                                            <img src="image/jpg/portfolio-image3.jpg" alt="" class="w-100">
+                                            <img src="image/jpg/portfolio-image-3.jpg" alt="" class="w-100">
                                         </a>
                                         <div class="text-center gr-pt-8">
                                             <span class="gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pb-1 d-block">STRONY INTERNETOWE</span>
-                                            <h3 class="gr-text-5 font-weight-bold"><a href="" class="gr-heading-color">--</a></h3>
+                                            <h3 class="gr-text-6 font-weight-bold"><a href="" class="gr-heading-color">--</a></h3>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-4 gr-pb-7 gr-pb-lg-13 isotope-item all branding">
                                     <div class="portfolio-card portfolio-card-hover">
                                         <a href="" class="card-image d-block">
-                                            <img src="image/jpg/portfolio-image3.jpg" alt="" class="w-100">
+                                            <img src="image/jpg/portfolio-image-4.jpg" alt="" class="w-100">
                                         </a>
                                         <div class="text-center gr-pt-8">
                                             <span class="gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pb-1 d-block">SKLEPY INTERNETOWE</span>
-                                            <h3 class="gr-text-5 font-weight-bold"><a href="" class="gr-heading-color">--</a></h3>
+                                            <h3 class="gr-text-6 font-weight-bold"><a href="" class="text-uppercase gr-heading-color">--</a></h3>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-4 gr-pb-7 gr-pb-lg-13 isotope-item all branding">
                                     <div class="portfolio-card portfolio-card-hover">
                                         <a href="" class="card-image d-block">
-                                            <img src="image/jpg/portfolio-image3.jpg" alt="" class="w-100">
+                                            <img src="image/jpg/portfolio-image-5.jpg" alt="" class="w-100">
                                         </a>
                                         <div class="text-center gr-pt-8">
                                             <span class="gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pb-1 d-block">SKLEPY INTERNETOWE</span>
-                                            <h3 class="gr-text-5 font-weight-bold"><a href="" class="gr-heading-color">--</a></h3>
+                                            <h3 class="gr-text-6 font-weight-bold"><a href="" class="text-uppercase gr-heading-color">--</a></h3>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-4 gr-pb-7 gr-pb-lg-13 isotope-item all branding">
                                     <div class="portfolio-card portfolio-card-hover">
                                         <a href="" class="card-image d-block">
-                                            <img src="image/jpg/portfolio-image3.jpg" alt="" class="w-100">
+                                            <img src="image/jpg/portfolio-image-6.jpg" alt="" class="w-100">
                                         </a>
                                         <div class="text-center gr-pt-8">
                                             <span class="gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pb-1 d-block">SKLEPY INTERNETOWE</span>
-                                            <h3 class="gr-text-5 font-weight-bold"><a href="" class="gr-heading-color">--</a></h3>
+                                            <h3 class="gr-text-6 font-weight-bold"><a href="" class="text-uppercase gr-heading-color">--</a></h3>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-4 gr-pb-7 gr-pb-lg-13 isotope-item all branding">
                                     <div class="portfolio-card portfolio-card-hover">
                                         <a href="https://folwarkruchenka.pl/" class="card-image d-block">
-                                            <img src="image/jpg/portfolio-image.jpg" alt="" class="w-100">
+                                            <img src="image/jpg/portfolio-image-7.jpg" alt="" class="w-100">
                                         </a>
                                         <div class="text-center gr-pt-8">
-                                            <span class="gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pb-1 d-block">OPTYMALIZACJA</span>
-                                            <h3 class="gr-text-5 font-weight-bold"><a href="https://folwarkruchenka.pl/" class="gr-heading-color">Folwark Ruchenka</a></h3>
+                                            <span class="gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pb-1 d-block">POZYCJONOWANIE</span>
+                                            <h3 class="gr-text-6 font-weight-bold"><a href="https://folwarkruchenka.pl/" class="text-uppercase gr-heading-color ">Folwark Ruchenka</a></h3>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-4 gr-pb-7 gr-pb-lg-13 isotope-item all branding">
                                     <div class="portfolio-card portfolio-card-hover">
                                         <a href="https://hotelborowina.pl/" class=" card-image d-block">
-                                            <img src="image/jpg/portfolio-image2.jpg" alt="" class="w-100">
+                                            <img src="image/jpg/portfolio-image-8.jpg" alt="" class="w-100">
                                         </a>
                                         <div class="text-center gr-pt-8">
-                                            <span class="gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pb-1 d-block">OPTYMALIZACJA</span>
-                                            <h3 class="gr-text-5 font-weight-bold"><a href="https://hotelborowina.pl/" class="gr-heading-color">Hotel Borowina</a></h3>
+                                            <span class="gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pb-1 d-block">POZYCJONOWANIE</span>
+                                            <h3 class="gr-text-6 font-weight-bold"><a href="https://hotelborowina.pl/" class="text-uppercase gr-heading-color">Hotel Borowina</a></h3>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-4 gr-pb-7 gr-pb-lg-13 isotope-item all branding">
                                     <div class="portfolio-card portfolio-card-hover">
                                         <a href="https://hotelborowina.pl/" class=" card-image d-block">
-                                            <img src="image/jpg/portfolio-image3.jpg" alt="" class="w-100">
+                                            <img src="image/jpg/portfolio-image-9.jpg" alt="" class="w-100">
                                         </a>
                                         <div class="text-center gr-pt-8">
-                                            <span class="gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pb-1 d-block">OPTYMALIZACJA</span>
-                                            <h3 class="gr-text-5 font-weight-bold"><a href="#" class="gr-heading-color">---</a></h3>
+                                            <span class="gr-text-15 font-weight-bold gr-text-color-opacity text-uppercase gr-pb-1 d-block">POZYCJONOWANIE</span>
+                                            <h3 class="gr-text-6 font-weight-bold"><a href="#" class="text-uppercase gr-heading-color">KUBA PSTROTY</a></h3>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4 gr-pb-7 gr-pb-lg-13 isotope-item all branding">
-                                    <div class="portfolio-card portfolio-card-hover">
-                                        <a href="" class="card-image d-block">
-                                            <img src="image/jpg/portfolio-image3.jpg" alt="" class="w-100">
-                                        </a>
-                                        <div class="text-center gr-pt-8">
-                                            <span class="gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pb-1 d-block">POZYCJONOWANIE</span>
-                                            <h3 class="gr-text-5 font-weight-bold"><a href="" class="gr-heading-color">---</a></h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 gr-pb-7 gr-pb-lg-13 isotope-item all branding">
-                                    <div class="portfolio-card portfolio-card-hover">
-                                        <a href="" class="card-image d-block">
-                                            <img src="image/jpg/portfolio-image3.jpg" alt="" class="w-100">
-                                        </a>
-                                        <div class="text-center gr-pt-8">
-                                            <span class="gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pb-1 d-block">POZYCJONOWANIE</span>
-                                            <h3 class="gr-text-5 font-weight-bold"><a href="" class="gr-heading-color">---</a></h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 gr-pb-7 gr-pb-lg-13 isotope-item all branding">
-                                    <div class="portfolio-card portfolio-card-hover">
-                                        <a href="" class="card-image d-block">
-                                            <img src="image/jpg/portfolio-image3.jpg" alt="" class="w-100">
-                                        </a>
-                                        <div class="text-center gr-pt-8">
-                                            <span class="gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pb-1 d-block">POZYCJONOWANIE</span>
-                                            <h3 class="gr-text-5 font-weight-bold"><a href="" class="gr-heading-color">---</a></h3>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                                 
                             </div>
                         </div>
@@ -299,8 +270,7 @@
                                
                                 <h2 style="margin-top: 25px;"
                                     class="poppins gr-text-4 text-left font-weight-medium text-uppercase gr-color-white letter-spacing-1_63">
-                                    <a class="text-white" href="https://periphas.pl/kontakt">Przyjmujemy nowe
-                                        projekty,<br> czekamy na twoją wiadomość</a>
+                                    <a class="text-white max-width-800" href="https://periphas.pl/kontakt">Potrzebujesz marketingu internetowego w swoim projekcie?</a>
                                 </h2>
 
                                 <ul class="links-inline d-flex flex-wrap  gr-pt-md-4 gr-pt-10 pl-0">
@@ -309,7 +279,7 @@
                                         class="text-uppercase border-right-sm font-weight-bold gr-text-12 letter-spacing-1_63">
                                         <a style="padding-left: 0!important;" href="mailto:kontakt@periphas.pl"
                                             class="gr-px-7 nohover-footer  gr-color-white d-inline-block btn-hover-translate ">
-                                            <span>USŁUGI</span>
+                                            <span>NASZE USŁUGI</span>
                                         </a>
                                     </li>
                                     <li class="text-uppercase font-weight-bold gr-text-12 letter-spacing-1_63">
@@ -320,7 +290,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <button style="margin-top:25px;border-color: none!important;box-shadow: 0 32px 54px rgba(3, 3, 3, 0.12);" type="submit" name="submit" id="submit" class="gr-bg-wheat min-width-100 btn with-icon rounded-pill pageload-link btn-hover-translate btn-hover-shadow-down">WYCEŃ PROJEKT<i style="margin-left: 20px;" class="icon icon-tail-right gr-text-8 font-weight-bolder"></i>
+                            <button style="margin-top:25px;border-color: none!important;box-shadow: 0 32px 54px rgba(3, 3, 3, 0.12);" type="submit" name="submit" id="submit" class=" btn-outline-white min-width-100 btn with-icon rounded-pill pageload-link btn-hover-translate btn-hover-shadow-down">WYCEŃ PROJEKT<i style="margin-left: 20px;" class="icon icon-tail-right gr-text-8 font-weight-bolder"></i>
                             </button>
 
                         </div>
@@ -335,33 +305,18 @@
                     <div class="container">
                         <div class="row">
                             <div class="column col-lg-3">
-                                <span class="gr-mb-4 gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pt-8 gr-pb-1 d-block">Informacje</span>
+                                <span class="gr-mb-4 gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pt-8 gr-pb-1 d-block">FIRMA</span>
                                 <p class="gr-text-10">
                                     <a href="https://periphas.pl/o-nas" class="gr-text-color-opacity">O nas</a>
                                 </p>
                                 <p class="gr-text-10">
                                     <a href="https://periphas.pl/uslugi" class="gr-text-color-opacity">Nasze usługi</a>
                                 </p>
+                                <p class="gr-text-10">
+                                    <a href="https://periphas.pl/kariera" class="gr-text-color-opacity">Kariera</a>
+                                </p>
                             </div>
-                            <div class="column col-lg-3">
-                                <span class="gr-mb-4 gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pt-8 gr-pb-1 d-block">Usługi</span>
-                                <p class="gr-text-10">
-                                    <a href="https://periphas.pl/uslugi" class="gr-text-color-opacity">Strony Internetowe</a>
-                                </p>
-                                <p class="gr-text-10">
-                                    <a href="https://periphas.pl/uslugi" class="gr-text-color-opacity">Sklepy Internetowe</a>
-                                </p>
-                                <p class="gr-text-10">
-                                    <a href="https://periphas.pl/uslugi" class="gr-text-color-opacity">Optymalizacja</a>
-                                </p>
-                                <p class="gr-text-10">
-                                    <a href="https://periphas.pl/uslugi" class="gr-text-color-opacity">Pozycjonowanie</a>
-                                </p>
-                                <p class="gr-text-10">
-                                    <a href="https://periphas.pl/uslugi" class="gr-text-color-opacity">Wsparcie</a>
-                                </p>
-
-                            </div>
+                            
                             <div class="column col-lg-3">
                                 <span class="gr-mb-4 gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pt-8 gr-pb-1 d-block">Realizacje</span>
                                 <p class="gr-text-10">
@@ -372,23 +327,94 @@
                                 </p>
                             </div>
                             <div class="column col-lg-3">
-                                <span class="gr-mb-4 gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pt-8 gr-pb-1 d-block">Obsługa Klienta</span>
+                                <span class="gr-mb-4 gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pt-8 gr-pb-1 d-block">Blog</span>
                                 <p class="gr-text-10">
-                                    <a href="#" class="gr-text-color-opacity">Reklamacje</a>
+                                    <a href="https://periphas.pl/" class="gr-text-color-opacity">Bramki Płatności</a>
                                 </p>
                                 <p class="gr-text-10">
-                                    <a href="#" class="gr-text-color-opacity">Program partnerski</a>
+                                    <a href="https://periphas.pl/" class="gr-text-color-opacity">Poprawa Konwersji</a>
+                                </p>
+                                <p class="gr-text-10">
+                                    <a href="https://periphas.pl/" class="gr-text-color-opacity">Chatboty</a>
+                                </p>
+                                
+
+                            </div>
+                            <div class="column col-lg-3">
+                                <span class="gr-mb-4 gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pt-8 gr-pb-1 d-block">Obsługa Klienta</span>
+                                <p class="gr-text-10">
+                                    <a href="https://periphas.pl/reklamacje" class="gr-text-color-opacity">Reklamacje</a>
+                                </p>
+                                <p class="gr-text-10">
+                                    <a href="https://periphas.pl/program-partnerski" class="gr-text-color-opacity">Program partnerski</a>
+                                </p>
+                                <p class="gr-text-10">
+                                    <a href="https://periphas.pl/kontakt" class="gr-text-color-opacity">Informacje kontaktowe</a>
                                 </p>
 
                             </div>
                         </div>
-                    </div>
+                        <div class="row ">
+                            <div class="column col-lg-3">
+                                <span class="gr-mb-4 gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pt-8 gr-pb-1 d-block">Strony Internetowe</span>
+                                <p class="gr-text-10">
+                                    <a href="https://periphas.pl/" class="gr-text-color-opacity">Wizytówka</a>
+                                </p>
+                                <p class="gr-text-10">
+                                    <a href="https://periphas.pl/" class="gr-text-color-opacity">Landing page</a>
+                                </p>
+                                <p class="gr-text-10">
+                                    <a href="https://periphas.pl/" class="gr-text-color-opacity">Portal</a>
+                                </p>
+                                <p class="gr-text-10">
+                                    <a href="https://periphas.pl/" class="gr-text-color-opacity">Serwis</a>
+                                </p>
+                            </div>
+                            <div class="column col-lg-3">
+                                <span class="gr-mb-4 gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pt-8 gr-pb-1 d-block">Sklepy Internetowe</span>
+                                <p class="gr-text-10">
+                                    <a href="https://periphas.pl/" class="gr-text-color-opacity">Mały</a>
+                                </p>
+                                <p class="gr-text-10">
+                                    <a href="https://periphas.pl/" class="gr-text-color-opacity">Średni</a>
+                                </p>
+                                <p class="gr-text-10">
+                                    <a href="https://periphas.pl/" class="gr-text-color-opacity">Duży</a>
+                                </p>
 
+                            </div>
+                            <div class="column col-lg-3">
+                                <span class="gr-mb-4 gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pt-8 gr-pb-1 d-block">Pozycjonowanie</span>
+                                <p class="gr-text-10">
+                                    <a href="https://periphas.pl/" class="gr-text-color-opacity">Audyt</a>
+                                </p>
+                                
+                                <p class="gr-text-10">
+                                    <a href="https://periphas.pl/" class="gr-text-color-opacity">Organiczne</a>
+                                </p>
+                                <p class="gr-text-10">
+                                    <a href="https://periphas.pl/" class="gr-text-color-opacity">Płatne</a>
+                                </p>
+                            </div>
+                            <div class="column col-lg-3">
+                                <span class="gr-mb-4 gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase gr-pt-8 gr-pb-1 d-block">Wsparcie</span>
+                                <p class="gr-text-10">
+                                    <a href="https://periphas.pl/" class="gr-text-color-opacity">Bezpieczeństwo</a>
+                                </p>
+                                <p class="gr-text-10">
+                                    <a href="https://periphas.pl/" class="gr-text-color-opacity">Utrzymanie</a>
+                                </p>
+
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
+                
                 <div class="border-top gr-pt-5">
                     <div class="container d-flex space-between gr-mt-4">
                         <div class="row">
-                            <p class="gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase d-block">© 2021 Periphas, Wszelkie prawa ZASTRZEżONE</p>
+                            <p class="gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase d-block">© 2021 Periphas, Wszelkie prawa ZASTRZEŻONE</p>
                         </div>
                         <div class="row d-flex">
                             <p class="gr-pl-7 gr-text-13 font-weight-bold gr-text-color-opacity text-uppercase d-block">
@@ -410,7 +436,6 @@
                         </div>
                     </div>
                 </div>
-
             </footer>
         </div>
         </div>
